@@ -23,8 +23,10 @@ class ViewController: UIViewController {
         let r:Double = (self.swR.isOn) ? 255.0 : 0
         let g:Double = (self.swG.isOn) ? 255.0 : 0
         let b:Double = (self.swB.isOn) ? 255.0 : 0
-        self.viewColor.backgroundColor = UIColor(displayP3Red: CGFloat(r/255.0), green: CGFloat(g/255.0), blue: CGFloat(b/255.0), alpha: 1)
+        self.viewColor.backgroundColor = UIColor(
+            displayP3Red: CGFloat(r/255.0),
+            green: CGFloat(g/255.0),
+            blue: CGFloat(b/255.0),
+            alpha: 1)
     }
-    
 }
-
